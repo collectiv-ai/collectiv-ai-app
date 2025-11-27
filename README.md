@@ -10,8 +10,10 @@ This repository will host the CollectivAI client applications
 - [ ] Public alpha/beta release
 - [ ] App Store launch (TBD)
 
-## Related
+## Related Repositories
 
-- Main website & docs: https://github.com/collectiv-ai/collectiv-ai.github.io
-- Public business plan: /docs/BUSINESS_PLAN_PUBLIC.md
-- Governance concepts: https://github.com/collectiv-ai/collectivai-governance
+- 🌐 Main website & public docs: [collectiv-ai.github.io](https://github.com/collectiv-ai/collectiv-ai.github.io)
+- 👤 Founder profile & lab: [collectiv-ai-about-founder](https://github.com/collectiv-ai/collectiv-ai-about-founder)
+- 🤝 Sponsors & partners: [collectiv-ai-sponsors](https://github.com/collectiv-ai/collectiv-ai-sponsors)
+
+---
