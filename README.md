@@ -1,7 +1,7 @@
 # CollectivAI App (Alpha)
 
 This repository will host the CollectivAI client applications  
-(iOS / iPadOS / macOS, built with SwiftUI).
+(iOS / iPadOS / macOS, built with XCode).
 
 ## Status
 
