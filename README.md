@@ -6,7 +6,7 @@ This repository will host the CollectivAI client applications
 ## Status
 
 - [x] Concept & public business plan
-- [ ] Initial SwiftUI prototype
+- [ ] Initial XCode prototype
 - [ ] Public alpha/beta release
 - [ ] App Store launch (TBD)
 
