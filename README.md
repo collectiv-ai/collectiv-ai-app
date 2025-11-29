@@ -114,3 +114,6 @@ Planned ideas:
   - keep track of which AI analyses were used before or during a decision
   - later link these analyses to on-chain proposals and votes
 
+These future levels are intentionally long-term and exploratory.
+They are meant to guide the evolution of the CollectiVAI App beyond
+a single use case – towards a full civic infrastructure client.
