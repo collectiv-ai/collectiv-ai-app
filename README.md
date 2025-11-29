@@ -91,3 +91,26 @@ This app is designed as the primary client for the **CollectiVAI Chain**
 
 The app can already be developed and tested in **Alpha** and **Beta** stages  
 without a running chain. Later, the Chain Phase will add full on-chain governance support.
+
+---
+
+## Future Levels – Beyond the Chain Phase
+
+After the initial Alpha, Beta and Chain phases, the CollectiVAI App is planned to grow into
+a full civic ecosystem. The following levels are conceptual building blocks for that evolution.
+
+### 🔹 Level 4 – AI Governance Layer
+
+Focus: use AI not only as a helper, but as a **governance companion**.
+
+Planned ideas:
+
+- AI checks for each proposal / vote:
+  - highlight potential risks, blind spots and affected groups
+  - point out unclear or ambiguous wording
+- Multiple AI perspectives per proposal:
+  - legal, economic, social, privacy-focused views (via different providers / prompts)
+- AI audit log:
+  - keep track of which AI analyses were used before or during a decision
+  - later link these analyses to on-chain proposals and votes
+
