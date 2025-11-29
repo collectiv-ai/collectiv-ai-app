@@ -1,5 +1,3 @@
----
-
 ## Roadmap & Feature Stages
 
 The CollectiVAI App will evolve in three main stages:
