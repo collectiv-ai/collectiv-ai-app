@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="CollectiVAI Logo" width="260" />
+  <img src="logo.png" alt="CollectiVAI Logo" width="400" />
 </p>
 
 <h1 align="center">CollectiVAI App (Alpha)</h1>
