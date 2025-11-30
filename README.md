@@ -6,10 +6,6 @@
 <h3 align="center">Democratic AI Companion & Civic Client</h3>
 
 <p align="center">
-  <a href="#deutsch">🇩🇪 Deutsch</a> &nbsp;|&nbsp; <a href="#english">🇬🇧 English</a>
-</p>
-
-<p align="center">
   <a href="https://collectivai.org">
     <img src="https://img.shields.io/badge/Website-collectivai.org-003399?style=flat" alt="Website" />
   </a>
@@ -22,111 +18,7 @@
 
 ---
 
-## 🇩🇪 Übersicht <a id="deutsch"></a>
-
-Die **CollectiVAI App** ist der **Client** für das CollectiVAI-Ökosystem:  
-eine demokratische, menschenzentrierte AI-Plattform mit Fokus auf Europa.
-
-Die App ist als **AI-Begleiter für Demokratie, Politik und Civic Tech** gedacht:
-
-- hilft Menschen, **Vorschläge und Politik** besser zu verstehen,
-- unterstützt **Diskussion, Beteiligung und Co-Creation** (Bürger:innen, Expert:innen, Institutionen),
-- soll später als **vollwertiger Client für die CollectiVAI Chain** dienen  
-  (Cosmos-App-Chain in einem separaten Repository).
-
-Dieses Repository enthält das **Xcode-Projekt** für iOS / iPadOS / macOS.
-
----
-
-### 🇩🇪 Funktionsbereiche (aktueller Prototyp)
-
-Die aktuelle App (Alpha / Prototype) ist in vier Hauptbereiche gegliedert:
-
-1. **Chat**  
-   - AI-Chat mit Themenfokus (Demokratie, Klima, Wirtschaft, Sicherheit, Forschung, Gesundheit)  
-   - Auswahl von **Modus** (Ethical · Research · Technical)  
-   - Auswahl von **Provider** (Auto, OpenAI, Gemini, Mistral, Meta, DeepSeek)  
-   - Transparente Routing-Infos (verwendetes Modell, Latenz – optional im Developer Mode)
-
-2. **Contracts**  
-   - „Civic Application Hub“ für **Anträge und Vorhaben**  
-   - Kategorien: Universitäten, Schulen, NGOs, Städte, Startups, Custom  
-   - **3-Schritte-Wizard** für Anwendungen:
-     - Basisdaten (Organisation, Land, Titel)
-     - Inhalt & Wirkung (Summary, Impact, Zielgruppe)
-     - Budget & Dauer (Betrag, Währung, Laufzeit, Status)
-   - Alles bleibt **menschlich lesbar** und kann später in On-Chain-Proposals gespiegelt werden.
-
-3. **Chain**  
-   - Civic Dashboard (Konzept-Ansicht, noch kein Live-Netzwerk)  
-   - Überblick, wie Anträge später als:
-     - **On-Chain-Proposals**
-     - **Votes**
-     - **Treasury-Allokationen**  
-     sichtbar sein könnten  
-   - Kacheln für Universitäten, Schulen, Städte, NGOs, Startups sowie Impact & Reputation
-
-4. **Settings & Info**  
-   - Standard-Einstellungen (Mode, Provider, Topic)  
-   - Routing-Profile (Balanced, Research-heavy, Code & Security)  
-   - Textgröße, Haptik, Developer Mode, Live Monitoring  
-   - einfache Privacy-Einstellungen (App Lock, Telemetry-Toggle, Auto-Delete-Planung)  
-   - „About“-Screen mit Projekt-Beschreibung und Links (Website, GitHub-Organisation)
-
-> **Ziel des aktuellen Standes:**  
-> Ein **funktionaler Prototyp**, der zeigt, wie eine demokratische AI-App  
-> für Beteiligung, Analyse und Governance aussehen kann – bevor eine echte Chain live ist.
-
----
-
-### 🇩🇪 Status & Roadmap (App)
-
-**Aktueller Status:**
-
-- ✅ Grundkonzept & öffentliches Business-Dokument  
-- ✅ Erste Xcode-App (SwiftUI, Navigation, Screens)  
-- ✅ Chat-Router (Multi-Provider + Mode/Topic-Routing)  
-- ✅ Contracts-Wizard für Civic Applications  
-- ✅ Chain-Dashboard als Konzept-Ansicht  
-- ⏳ Verknüpfung mit echten Programmen / Piloten (z. B. Städte, Unis, NGOs)  
-- ⏳ Direkte Anbindung an CollectiVAI Chain (Cosmos-Devnet/Testnet)  
-- ⏳ App-Store-Release (abhängig von Governance & Partnern)
-
-**Geplante Phasen (kurz):**
-
-1. **Alpha – AI Companion & Konzept-App**  
-   - Fokus: Verständnis, Erklärungen, Pro/Contra-Analysen, erste Civic-Drafts.
-
-2. **Beta – Civic Participation (off-chain)**  
-   - zusätzliche Rollen (Citizen, Expert, Institution),
-   - diskussionsbasierte Workflows (Draft → Diskussion → „Vote“ off-chain),
-   - mehrsprachige Nutzung (DE/EN + weitere).
-
-3. **Chain Phase – Cosmos App-Chain Integration**  
-   - Verbindung zu `collectivai-devnet` / Testnet,
-   - On-Chain-Proposals & Votes,
-   - Anzeige von Proposal-IDs, Vote-Status, Treasury-Bewegungen,
-   - Rolle der App als **vollständiger Client der CollectiVAI Chain**.
-
----
-
-### 🇩🇪 Architektur (vereinfacht)
-
-- **Plattformen**
-  - iOS  
-  - iPadOS  
-  - macOS (SwiftUI / ggf. Catalyst)
-
-- **Schichten (geplant / teilweise implementiert)**
-  - **UI-Layer** – SwiftUI-Views (Chat, Contracts, Chain-Dashboard, Settings)  
-  - **State & Config** – zentrale `CollectivAIConfig` (Provider, Mode, Topic, Projekte, Applications)  
-  - **Backend-Client** – `CollectivAIBackend` (HTTP-Client zu deinem eigenen Router-Backend)  
-  - **Chain-Client (geplant)** – Cosmos-Client für CollectiVAI Chain (RPC / REST / gRPC)  
-  - **Local Storage** – AppStorage, lokale Drafts, spätere Cache-/Persistence-Layer
-
----
-
-## 🇬🇧 Overview <a id="english"></a>
+## Overview
 
 The **CollectiVAI App** is the **client application** for the CollectiVAI ecosystem:  
 a democratic, human-centred AI platform with a European focus.
@@ -143,39 +35,43 @@ This repository contains the **Xcode project** for iOS / iPadOS / macOS.
 
 ---
 
-### 🇬🇧 Feature Areas (current prototype)
+## Feature areas (current prototype)
 
 The current (alpha / prototype) app is structured into four main tabs:
 
-1. **Chat**  
-   - AI chat focused on topics such as democracy, climate, economy, security, research, health  
-   - **Mode** selection (Ethical · Research · Technical)  
-   - **Provider** selection (Auto, OpenAI, Gemini, Mistral, Meta, DeepSeek)  
-   - Transparent routing meta (model used, latency – optional in Developer Mode)
+### 1. Chat
 
-2. **Contracts**  
-   - “Civic Application Hub” for **applications and project drafts**  
-   - Categories: universities, schools, NGOs, cities, startups, custom  
-   - **3-step wizard**:
-     - basics (organisation, country, title)
-     - content & impact (summary, impact, target groups)
-     - budget & duration (amount, currency, duration, status)
-   - All content stays **human-readable** and can later be mirrored to on-chain proposals.
+- AI chat focused on topics such as **democracy, climate, economy, security, research, health**  
+- **Mode** selection (Ethical · Research · Technical)  
+- **Provider** selection (Auto, OpenAI, Gemini, Mistral, Meta, DeepSeek)  
+- Transparent routing meta (model used, latency – optional in Developer Mode)
 
-3. **Chain**  
-   - Civic dashboard (concept view, no live network yet)  
-   - Shows how your applications could later appear as:
-     - **on-chain proposals**
-     - **votes**
-     - **public treasury allocations**  
-   - Cards/tiles for universities, schools, cities, NGOs, startups, and your impact/reputation.
+### 2. Contracts
 
-4. **Settings & Info**  
-   - Default settings (mode, provider, topic)  
-   - Routing profiles (Balanced, Research-heavy, Code & Security)  
-   - Text size, haptics, Developer Mode, live monitoring  
-   - Simple privacy toggles (App Lock, telemetry opt-in, auto-delete planning)  
-   - “About” screen with explanation and links (website, GitHub organisation).
+- “Civic Application Hub” for **applications and project drafts**  
+- Categories: universities, schools, NGOs, cities, startups, custom  
+- **3-step wizard**:
+  1. basics (organisation, country, title)  
+  2. content & impact (summary, impact, target groups)  
+  3. budget & duration (amount, currency, duration, status)  
+- All content stays **human-readable** and can later be mirrored to on-chain proposals.
+
+### 3. Chain
+
+- Civic dashboard (concept view, no live network yet)  
+- Shows how your applications could later appear as:
+  - **on-chain proposals**
+  - **votes**
+  - **public treasury allocations**  
+- Cards/tiles for universities, schools, cities, NGOs, startups, and your impact/reputation.
+
+### 4. Settings & Info
+
+- Default settings (mode, provider, topic)  
+- Routing profiles (Balanced, Research-heavy, Code & Security)  
+- Text size, haptics, Developer Mode, live monitoring  
+- Simple privacy toggles (App Lock, telemetry opt-in, auto-delete planning)  
+- “About” screen with explanation and links (website, GitHub organisation).
 
 > **Goal of the current stage:**  
 > Provide a **working prototype UI** that demonstrates how a democratic AI app  
@@ -183,7 +79,7 @@ The current (alpha / prototype) app is structured into four main tabs:
 
 ---
 
-### 🇬🇧 Status & Roadmap (App)
+## Status & roadmap (App)
 
 **Current status:**
 
@@ -199,12 +95,76 @@ The current (alpha / prototype) app is structured into four main tabs:
 **Planned phases (short):**
 
 1. **Alpha – AI Companion & Concept App**  
+   - Focus: understanding, explanations, pro/con analysis, early civic drafts.
+
 2. **Beta – Civic Participation (off-chain)**  
-3. **Chain Phase – Full Cosmos App-Chain integration**
+   - additional roles (citizen, expert, institution)  
+   - discussion-based workflows (draft → discussion → “vote” off-chain)  
+   - multi-language use (EN + others)
+
+3. **Chain Phase – Full Cosmos App-Chain integration**  
+   - connection to `collectivai-devnet` / testnet  
+   - on-chain proposals & votes  
+   - display of proposal IDs, vote status, treasury movements  
+   - the app acts as a **full client of the CollectiVAI Chain**.
 
 ---
 
-## 🧩 Relation to CollectiVAI Chain
+## Architecture (simplified)
+
+- **Platforms**
+  - iOS  
+  - iPadOS  
+  - macOS (SwiftUI / Catalyst if needed)
+
+- **Layers (planned / partially implemented)**
+  - **UI layer** – SwiftUI views (Chat, Contracts, Chain dashboard, Settings)  
+  - **State & config** – central `CollectivAIConfig` (providers, modes, topics, projects, applications)  
+  - **Backend client** – `CollectivAIBackend` (HTTP client to the router backend)  
+  - **Chain client (planned)** – Cosmos client for the CollectiVAI Chain (RPC / REST / gRPC)  
+  - **Local storage** – AppStorage, local drafts, future cache/persistence layer
+
+---
+
+## Getting started (for developers)
+
+> The app is currently in **alpha / prototype** state. API contracts and internal
+> structure may change as the router and chain evolve.
+
+### Requirements
+
+- Xcode 16+ (or current Xcode with iOS 18 SDK)  
+- macOS with SwiftUI support  
+- A configured **CollectiVAI Router** endpoint (for real API calls) or the demo router.
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/collectiv-ai/collectiv-ai-app.git
+   cd collectiv-ai-app
+   ```
+
+2. Open the Xcode project:
+
+   - Open `collectivai.xcodeproj` in Xcode.
+
+3. Select a target & run:
+
+   - Choose the `collectivai` target.  
+   - Run on an iOS Simulator, iPad Simulator or a connected Mac Catalyst device.
+
+4. Configure backend URL (optional):
+
+   - In early prototypes, the app may use a simple configuration struct or plist  
+     to point to your **CollectiVAI Router** (e.g. `http://localhost:8000/api/chat`).  
+   - For production, the router should be available via HTTPS and protected  
+     according to your infrastructure.
+
+---
+
+## Relation to CollectiVAI Chain
 
 The CollectiVAI App and the CollectiVAI Chain are tightly connected but serve different roles:
 
@@ -223,10 +183,13 @@ the Chain is developed in [`collectiv-ai-app-chain`](https://github.com/collecti
 
 ---
 
-## 🔗 Related repositories
+## Related repositories
 
 - ⛓ **Cosmos App-Chain (backend):**  
   [`collectiv-ai-app-chain`](https://github.com/collectiv-ai/collectiv-ai-app-chain)
+
+- 🧠 **AI routing backend (multi-provider):**  
+  [`collectiv-ai-router`](https://github.com/collectiv-ai/collectiv-ai-router)
 
 - 🌐 **Main website & public docs:**  
   [`collectiv-ai.github.io`](https://github.com/collectiv-ai/collectiv-ai.github.io)
@@ -241,7 +204,7 @@ the Chain is developed in [`collectiv-ai-app-chain`](https://github.com/collecti
   [`collectiv-ai-sponsors`](https://github.com/collectiv-ai/collectiv-ai-sponsors)
 
 - 👤 **Founder profile & portfolio:**  
-  [`collectiv-ai-about-founder`](https://github.com/collectiv-ai/collectiv-ai-about-founder)
+  [`collectiv-ai-about-founder`](https://github.com/collectiv-ai-about-founder)
 
 ---
 
